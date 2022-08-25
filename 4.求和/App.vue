@@ -18,8 +18,8 @@ export default {
   },
   computed: {
     getSum() {
-     return this.checkNum.reduce((sum, item) => {
-        return sum += item;
+     return this.checkNum.reduce((sum, acc) => {
+        return (sum += acc);
       }, 0);
     },
   },
